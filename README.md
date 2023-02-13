@@ -16,3 +16,8 @@
    I would like to use JavaScript to make my contact form actually functional. Currently it only has a look. I would also make the layout of my gallery more organized and has an effect of hover over the picture to show text, instead of showing text directly under the pictures.
 5. How many hours did you spend on this assignment?
    20hrs.
+
+6. If you used code or design from somewhere online, please mention it here. Furthermore, if you imported a file to use a Fonts or Icons library, please indicate that here as well.
+   https://thebrandsmen.com/css-image-hover-effects/
+   https://www.w3schools.com/howto/howto_css_contact_form.asp
+   https://www.w3schools.com/howto/howto_css_timeline.asp
