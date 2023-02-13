@@ -4,8 +4,60 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Contact Me</title>
-    <style></style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
-  <body></body>
+  <body>
+    <div class="page">
+      <header>
+        <img class="logo" src="images/work.png" alt="logo" />
+        <h1>Yuxuan Lin's Website</h1>
+        <ul class="nav">
+          <li class="active"><a href="index.html">HOME</a></li>
+          <li><a href="projects.html">PORTFOLIO</a></li>
+          <li><a href="interests.html">INTERESTS</a></li>
+          <li><a href="contact.html">CONTACT ME</a></li>
+        </ul>
+      </header>
+
+      <div class="main contactgrid">
+        <div class="text">
+          <h1>
+          Find me here or leave a msg!
+          <span>&#129303;</span>
+        </h1>
+        </div>
+        <div class="email">
+          <a href="mailto:lin.yuxua@northeastern.edu">
+            <img class="logocontact" src="images/email-logo.png" alt="email">
+          </a>
+        </div>
+        <div class="github">
+          <a href="https://github.com/YuxuanLin-ca/YuxuanLin-ca.github.io.git">
+            <img class="logocontact" src="images/github-logo.png" alt="Github">
+          </a>
+        </div>
+        <div class="linkedin">
+          <a href="https://www.linkedin.com/in/yuxuan-lin-20520949">
+            <img class="logocontact" src="images/linkedin-logo.png" alt="LinkedIn">
+          </a>
+        </div>
+        <div class="form">
+  <form>
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="text">Message</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+        </div>
+      </div>
+  </body>
 </html>

@@ -25,6 +25,27 @@ header {
   transition: all 0.5s linear;
 }
 
+h1 {
+  line-height: 2;
+}
+
+p {
+  line-height: 2;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+.logocontact {
+  width: 50px;
+  height: 50px;
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
 ul li {
   display: inline-block;
   list-style: none;
@@ -55,11 +76,72 @@ body {
   padding-bottom: 50px;
 }
 
-h1 {
-  line-height: 2;
+/* grid in contact me page */
+.contactgrid {
+  background-color: aqua;
+  width: 700px;
+  gap: 5px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(4, 100px);
+  grid-template-areas:
+    "text text"
+    "email form"
+    "github form"
+    "linkedin form";
 }
-p {
-  line-height: 2;
+
+.text {
+  grid-area: text;
+}
+
+.email {
+  background-color: rgb(46, 158, 62);
+  grid-area: email;
+}
+
+.form {
+  background-color: rgb(144, 160, 54);
+  grid-area: form;
+}
+
+.github {
+  background-color: rgb(43, 80, 226);
+  grid-area: github;
+}
+
+.linkedin {
+  background-color: rgb(226, 43, 134);
+  grid-area: linkedin;
+}
+
+/* contact form */
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #45a049;
 }
 
 /* The actual timeline (the vertical ruler) */
