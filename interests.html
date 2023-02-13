@@ -3,9 +3,65 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>My Cat Xigua</title>
-    <style></style>
+    <title>My Interests</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
-  <body></body>
+  <body>
+    <div class="page">
+      <header>
+        <img class="logo" src="images/work.png" alt="logo" />
+        <h1>Yuxuan Lin's Website</h1>
+        <ul class="nav">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="projects.html">PORTFOLIO</a></li>
+          <li class="active"><a href="interests.html">INTERESTS</a></li>
+          <li><a href="contact.html">CONTACT ME</a></li>
+        </ul>
+      </header>
+
+      <div class="main">
+        <h1>
+          I like...
+          <span>&#129303;</span>
+        </h1>
+      </div>
+      <div class="content text_portfolio">
+        <h3>Bookpedia</h3>
+        <ul>
+          <li>
+            Developed web portal for virtual library to store, manipulate and
+            search books by customers and staff
+          </li>
+          <li>
+            Designed UML model and translated into relational database schema
+            with MySQL
+          </li>
+          <li>
+            Formatted csv file using Bash and bulk loaded 40 million entries
+            into AWS RDS
+          </li>
+        </ul>
+      </div>
+
+      <div class="content text_portfolio">
+        <h3>CatsRUs</h3>
+        <ul>
+          <li>
+            Created full-stack MERN social media web application including
+            features of post, like, comment and live messaging dedicated to cat
+            lovers community
+          </li>
+          <li>
+            Built responsive front-end layouts using React and Redux for
+            cross-page state management control
+          </li>
+          <li>
+            Implemented RESTful APIs with Node.js Express framework supporting
+            CRUD operations
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>
