@@ -166,25 +166,25 @@ p {
   }
 
   .nav li {
-    width: 90px;
+    width: 110px;
     display: block;
     background-color: antiquewhite;
   }
 
   .timeline::after {
-    left: 70px;
+    left: 170px;
   }
 
   /* Full-width containers */
   .container {
     width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+    padding-left: 170px;
+    padding-right: 170px;
   }
 
   /* Make sure that all arrows are pointing leftwards */
   .container::before {
-    left: 60px;
+    left: 160px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
@@ -193,7 +193,7 @@ p {
   /* Make sure all circles are at the same spot */
   .left::after,
   .right::after {
-    left: 15px;
+    left: 113px;
   }
 
   /* Make all right containers behave like the left ones */
