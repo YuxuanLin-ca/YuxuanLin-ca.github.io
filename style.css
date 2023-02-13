@@ -242,9 +242,39 @@ input[type="submit"]:hover {
   margin: auto;
   margin-bottom: 20px;
 }
+
 .text_portfolio ul li {
   margin-left: 20px;
   margin-top: 5px;
+}
+
+/* interests page */
+.gallery {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.item {
+  height: 250px;
+  width: 200px;
+  text-align: center;
+}
+
+.itempic {
+  height: 200px;
+  width: 200px;
+  margin: 5px;
+  border-radius: 5%;
+}
+
+.item p::first-letter {
+  font-weight: bold;
+  color: brown;
+  text-transform: uppercase;
 }
 
 /* Media queries - Responsive timeline on screens less than 1000px wide */
