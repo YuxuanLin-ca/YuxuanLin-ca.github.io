@@ -38,6 +38,10 @@ p {
   height: 150px;
 }
 
+.logo :hover {
+  transform: scale(1.2);
+}
+
 .logocontact {
   width: 50px;
   height: 50px;
@@ -269,6 +273,12 @@ input[type="submit"]:hover {
   width: 200px;
   margin: 5px;
   border-radius: 5%;
+  opacity: 0.5;
+  transition: all 0.5s linear;
+}
+
+.itempic:hover {
+  opacity: 1;
 }
 
 .item p::first-letter {
