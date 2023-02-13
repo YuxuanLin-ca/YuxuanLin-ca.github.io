@@ -46,13 +46,13 @@ p {
   margin-right: auto; */
 }
 
-ul li {
+.nav li {
   display: inline-block;
   list-style: none;
   margin: 20px 20px;
 }
 
-ul li a {
+.nav li a {
   text-decoration: none;
   color: brown;
   text-transform: uppercase;
@@ -78,11 +78,11 @@ body {
 
 /* grid in contact me page */
 .contactgrid {
-  background-color: aqua;
+  /* background-color: aqua; */
   width: 700px;
   gap: 5px;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-rows: repeat(4, 100px);
   grid-template-areas:
     "text text"
@@ -96,22 +96,22 @@ body {
 }
 
 .email {
-  background-color: rgb(46, 158, 62);
+  /* background-color: rgb(46, 158, 62); */
   grid-area: email;
 }
 
 .form {
-  background-color: rgb(144, 160, 54);
+  /* background-color: rgb(144, 160, 54); */
   grid-area: form;
 }
 
 .github {
-  background-color: rgb(43, 80, 226);
+  /* background-color: rgb(43, 80, 226); */
   grid-area: github;
 }
 
 .linkedin {
-  background-color: rgb(226, 43, 134);
+  /* background-color: rgb(226, 43, 134); */
   grid-area: linkedin;
 }
 
@@ -237,20 +237,38 @@ input[type="submit"]:hover {
   border-radius: 15px;
 }
 
+.text_portfolio {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.text_portfolio ul li {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
 /* Media queries - Responsive timeline on screens less than 1000px wide */
 @media screen and (max-width: 1000px) {
-  ul {
+  .nav {
     position: fixed;
+    display: grid;
+    height: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px 20px;
     width: 100%;
-    height: 100vh;
-    top: 180px;
+    top: 135px;
     left: 0;
+    background-color: antiquewhite;
   }
 
   .nav li {
     width: 110px;
     display: block;
     background-color: antiquewhite;
+  }
+
+  div h1 {
+    line-height: normal;
   }
 
   .timeline::after {
@@ -281,5 +299,47 @@ input[type="submit"]:hover {
   /* Make all right containers behave like the left ones */
   .right {
     left: 0%;
+  }
+
+  .contactgrid {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .timeline::after {
+    left: 70px;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 13px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+
+  .text_portfolio {
+    width: 80%;
   }
 }
